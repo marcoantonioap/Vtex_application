@@ -1,16 +1,32 @@
 import express from 'express'
+import unless from 'express-unless'
+import StoreController from './controllers/StoreController';
+import ProductController from './controllers/ProductController';
+import SaleController from './controllers/SaleController';
+import AuthController from './controllers/AuthController';
+import { authorize } from './middleware';
+
 const routes = express.Router();
 
-routes.post('/products', (request, response)=>{
-    
-    const body = request.body;
-    console.log(body);
-    
-    return response.json(
-        {
-            nome: 'Marco Villa', 
-            idade: 17
-        });
-});
+
+const storeController = new StoreController()
+const productController = new ProductController()
+const saleController = new SaleController()
+const authController = new AuthController()
+
+routes.post('/login', authController.login)
+
+routes.use(authorize)
+
+routes.post('/stores', storeController.create)
+routes.get('/stores/:id', storeController.show)
+
+routes.get('/products', productController.index)
+routes.get('/products/:id', productController.show)
+routes.post('/products', productController.create)
+
+routes.get('/sales', saleController.index)
+routes.get('/sales/mostSoldByCategory/:store_id', saleController.mostSold)
+routes.post('/sales', saleController.create)
 
 module.exports = routes;

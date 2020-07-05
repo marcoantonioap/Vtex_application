@@ -6,6 +6,7 @@ export const up = async (knex: Knex) => {
     table.integer('quantity').notNullable()
     table.float('price', 2).notNullable()
     table.integer('category_id').unsigned().references('id_category').inTable('categorys').notNullable()
+    table.integer('store_id').unsigned().references('id_store').inTable('stores').notNullable()
   })
 }
 

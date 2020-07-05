@@ -5,6 +5,4 @@ const app = express();
 app.use(express.json());
 app.use(routes);
 
-app.listen(3333, ()=>{
-    console.log('conexão estabelecida com sucesso');
-});
+app.listen(3333);
