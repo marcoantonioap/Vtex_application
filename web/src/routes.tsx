@@ -9,9 +9,9 @@ import Profile from './pages/Profile';
 const Routes = () => {
     return (
         <BrowserRouter>
-            <Route component={Home} path="/" exact />
+            <Route component={Login} path="/" exact />
+            <Route component={Home} path="/home"/>
             <Route component={Register} path="/register"/>
-            <Route component={Login} path="/login"/>
             <Route component={Profile} path="/profile"/>
         </BrowserRouter>
     ) 
