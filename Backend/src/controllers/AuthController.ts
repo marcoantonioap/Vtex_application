@@ -16,7 +16,6 @@ class AuthController {
       return response.sendStatus(400).send('User not found')
     } 
     try {
-      console.log(store)
       if(await authenticateLogin(password, store.password)) {
         const accesToken = jwt.sign(store, ACCESS_TOKEN)
         response.send({accesToken})

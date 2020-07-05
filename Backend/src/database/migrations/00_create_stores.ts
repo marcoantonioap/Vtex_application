@@ -5,7 +5,7 @@ export const up = async (knex: Knex) => {
     table.string('name').notNullable()
     table.string('cnpj').notNullable()
     table.string('email').notNullable()
-    table.string('login').notNullable()
+    table.string('login').notNullable().unique()
     table.string('password').notNullable()
     table.string('city').notNullable()
     table.string('uf', 2).notNullable()

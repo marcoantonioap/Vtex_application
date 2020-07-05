@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
 import knex from '../database/connection'
-import { Sale, Category } from '../models'
+import { Sale, Category, Product } from '../models'
 
 class SaleController {
   async create(request: Request, response: Response) {
@@ -13,10 +13,24 @@ class SaleController {
         sale_income,
         sale_date
       })
+
+      const product = await trx<Product>('products').where('id_product', '=', product_id).first()
+      if(!product) {
+        await trx.rollback()
+        return response.sendStatus(400).send('Product Not Found')
+      }
+
+      const newQuantity = product.quantity - quantity_sold
+      if(newQuantity < 0) {
+        await trx.rollback()
+        return response.sendStatus(400).send('Quantity not available')
+      }
+
+      await trx('products').where('id_product', '=', product_id).update({quantity: newQuantity})
+
       await trx.commit()
       return response.json(insertedSale)
     } catch (e) {
-      console.log(e)
       await trx.rollback()
       return response.sendStatus(500).send()
      
@@ -41,7 +55,6 @@ class SaleController {
   async mostSold(request: Request, response: Response) {
     const { store_id } = request.params
     const categories = await knex('categories').where('store_id', '=', store_id)
-    console.log(categories)
     let mostSold: {[category: string]: {}} = {}
     const promises = categories.map(async (category: Category) => {
       const sales = await knex('sales')

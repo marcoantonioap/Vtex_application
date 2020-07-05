@@ -16,7 +16,6 @@ class ProductController {
       })
       await trx.commit()
     } catch (e) {
-      console.log(e)
       await trx.rollback()
       return response.json({ sucess: false })
     }

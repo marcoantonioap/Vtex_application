@@ -31,7 +31,6 @@ class StoreController {
       await trx.commit()
       return response.json({ sucess: true })
     } catch (e) {
-      console.log(e)
       await trx.rollback()
       return response.sendStatus(500).send()
     }
