@@ -1,6 +1,3 @@
-# Vtex_application
-Desafio da Vtex no evento Mega Hack
-
 # VtexManager
 
 Projeto resultado do desafio da Vtex no Mega Hack 3.0
