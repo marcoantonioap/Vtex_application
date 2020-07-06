@@ -9,7 +9,7 @@ Tudo isso pelo nosso aplicativo.
 
 ### 🕹Tecnologias utilizadas:
 
-- [Node.js](https://nodejs.org/en/)
+- [Visual Studio Code](https://visualstudio.microsoft.com/pt-br/) (editor de texto)
 - [React Js](https://pt-br.reactjs.org/) (para fazer o site ilustrativo)
 - [React Native](https://reactnative.dev/) (para fazer o aplicativo/solução)
 
