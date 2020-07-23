@@ -16,7 +16,7 @@ Tudo isso pelo nosso aplicativo.
 **Made by 
 [Dayane Damaceno](https://github.com/DayaneDamaceno), 
 [Gabriel](https://github.com/gabrielsbs), 
-[Vinicius Gonçalves](https://github.com/Vevezes), and [Marco Antonio](https://github.com/marcoantonioap) 
+[Vinicius Gonçalves](https://github.com/Vevezes) and [Marco Antonio](https://github.com/marcoantonioap) 
 😄**
 
 
