@@ -9,9 +9,9 @@ Tudo isso pelo nosso aplicativo.
 
 ### 🕹Tecnologias utilizadas:
 
-- [Visual Studio Code](https://visualstudio.microsoft.com/pt-br/) (editor de texto)
-- [React Js](https://pt-br.reactjs.org/) (para fazer o site ilustrativo)
-- [React Native](https://reactnative.dev/) (para fazer o aplicativo/solução)
+- [Visual Studio Code](https://visualstudio.microsoft.com/pt-br/) (text-editor)
+- [React Js](https://pt-br.reactjs.org/) (site)
+- [React Native](https://reactnative.dev/) (app/solution)
 
 **Feito por Dayane Damaceno, Gabriel, Marco Antonio e Vinicius Gonçalves 😄**
 
