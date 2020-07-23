@@ -13,7 +13,8 @@ Tudo isso pelo nosso aplicativo.
 - [React Js](https://pt-br.reactjs.org/) (site)
 - [React Native](https://reactnative.dev/) (app/solution)
 
-**Made by [Dayane Damaceno] (https://github.com/DayaneDamaceno) 
+**Made by 
+[Dayane Damaceno] (https://github.com/DayaneDamaceno) 
 [Gabriel] (https://github.com/gabrielsbs) 
 [Vinicius Gonçalves] (https://github.com/Vevezes)  
 [Marco Antonio] (https://github.com/marcoantonioap) 😄**
