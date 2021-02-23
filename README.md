@@ -10,7 +10,6 @@ Tudo isso pelo nosso aplicativo.
 ### 🕹Tecnologias utilizadas:
 
 - [Visual Studio Code](https://visualstudio.microsoft.com/pt-br/) (text-editor)
-- [React Js](https://pt-br.reactjs.org/) (site)
 - [React Native](https://reactnative.dev/) (app/solution)
 
 ## Preview
