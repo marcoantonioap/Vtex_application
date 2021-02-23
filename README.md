@@ -15,10 +15,10 @@ Tudo isso pelo nosso aplicativo.
 ## Preview
 ![VtexManager-Mega-Hack-3 0-Vídeo-Demo](https://user-images.githubusercontent.com/65511251/88250863-42b08900-cc7f-11ea-9736-0a28fb192286.gif)
 
-**Made by 
+Made by 
 [Dayane Damaceno](https://github.com/DayaneDamaceno), 
 [Gabriel](https://github.com/gabrielsbs), 
 [Vinicius Gonçalves](https://github.com/Vevezes) and [Marco Antonio](https://github.com/marcoantonioap) 
-**
+
 
 
